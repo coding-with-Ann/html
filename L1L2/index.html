@@ -1,0 +1,131 @@
+<!DOCTYPE html>    <!-- #tells browser u r using html 5 -->
+                   <!--#doctype tells which version of html we are using -->
+
+<html lang="en">    <!-- # this is the root element of an html document-->
+
+<head>              <!--#contains the info that we dont want to display on webpage -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+                    <!--#viewport tells that the web page should be responsive -->
+    
+    <link rel="icon" type="image/jpg" href="./googlelogo.jpg">
+    <!--This is a favicon-->
+ 
+</head>
+<body>              <!--#contains indormation that will be displayed in web page -->
+    Hello world     <!--#contains all data rendered by the browser -->
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>    <!-- HEADING TAG used to display headings in html, it indicates the importance of heading
+                           H1, H2, H3 , H4 , H5, H6 are the heading tags with decrease in size from h1 to h5 -->
+    <hr/>                     
+    <p>This is a paragraph</p>
+    <hr/>
+    <a href ="https://google.com/">Google</a>   <!--anchor tag used to add links to ur page -->
+    <br>                                      <!--for next line -->
+    <a href = "https://bing.com/">Bing</a>   <!--  google bing are absolute links -->
+    <br>
+    <a href = "/HelloFolder/Hello.html">goto hello</a>   <!-- hello.html is a relative link -->
+    <hr/>
+
+    <img src = "https://th.bing.com/th/id/OIP.j3lg53T7cvfW8AvBZwA-rQHaDP?pid=ImgDet&rs=1" alt = "glogo"/>
+                                <!-- alt is used to store name of the picture so that if image doesnt load then user will know its a image of google logo     and this is a absolute url                   -->
+    <br/>
+    <img src = "./googlelogo.jpg" alt = 'google logo' height = "100"/>  
+            <!-- this is a relative url -->
+    <hr/>
+    <br/>
+
+
+    <!--AUDIO-->
+
+    <p>Destiny Rising.mp3</p>
+    <audio src="./Audio/Destiny Rising.mp3" controls muted loop></audio><br>
+    <p>Kevin MacLeod  Martian Cowboy Ambient.mp3</p>
+    <audio src="./Audio/Kevin MacLeod  Martian Cowboy Ambient.mp3" controls></audio><br>
+    <p>Kevin MacLeod Private Reflection.mp3</p>
+    <audio src="./Audio/Kevin MacLeod Private Reflection.mp3" controls></audio>
+    <br><br>
+
+    
+    <b>Bold</b>
+    <br/>
+    <i>Italic</i>      
+    <br/>
+    <u>Underline</u>
+                              <!-- for bold italic and underline  --> 
+    <br/>
+    <pr><i>Hello there</i>, we gonna use tag inside another tag</pr>
+    <br/>
+    <br/>
+    <big>This tag shows big text</big>
+    <hr/>
+    <small>This tag shows small text</small>
+    <hr/>
+    <p>H<sub>2</sub>O</p>    
+          <!-- To get 2 as a subscript <sub></sub> tag is used -->
+    <hr/>
+    <p>3<sup>2</sup>=9</p>
+           <!-- to get 2 as a power or superscript -->
+    <hr/>
+
+    <pre> hello         world
+        this is a pre tag
+    </pre>
+            <!-- to use spaces and nexline as per the need -->
+
+</body>
+</html>
+
+<!--
+    #HTML is a code that is used to structure a web page and its content
+#html tag is a container for some content or other html tags
+
+#<p>paragraph content</p> is a paragraph tag 
+#Two tags with paragraph is called HTML ELEMENT
+#<p> is opening tag, </p> is a closing tag.
+
+#HTML tag is the parent tag of head and body tags
+
+#Most of the html elements have opening and closing tags with content in between
+#some tags have no content in between <br>
+# HTML IS NOT CASE SENSITIVE-->
+
+<!-- BASIC HTML TAGS
+
+HTML ATTRIBUTES
+Attributes are used to add more information to the tag
+lang = 'en' is a attribute
+
+<a href = 'link'> </a>   is a anchor tag used to add links to the page
+href is a html attribute used to store website links
+
+<br> to add next line(Line break) and it is a empty tag.
+
+IMAGE TAG used to add images to page
+<img src = ""></img>
+
+
+AUDIO TAG USED TO ADD AUDIO TO WEBPAGE
+<audio src="" controls autoplay mute loop></audio>
+
+If audio1 format doesnt work in browser, audio2 can be used
+these are fallbacks
+<audio src="" controls autoplay muted loop>
+    <source src="" type=audio1/mpeg>    ****mpeg
+    <source src="" type=audio2/wav>
+                //these are fallbacks
+</audio>
+
+
+FAVICONS
+use an image that is atleast 96*96 pixels in width and height.
+for favicons most webbrowsers accept ico,png,gif,jpg,svg format
+<hr> is used to display a horizontal ruler, used to seperate content
+
+-->

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List, forms and tables</title>
+</head>
+
+<body>
+    <header><h1>Level 4</h1> </header>
+    <main> 
+         <ul>                 <!-- tag for unordered list -->
+            <li>Orange</li>    <!-- tag for list -->
+            <ul>
+                <li>Color: orange</li>
+                <li>Season: winter</li>
+
+            </ul>
+
+            <li>Banana</li>
+            <ul>
+                <li>Color: yellow</li>
+                <li>Season: winter</li>
+            </ul>
+
+            <li>litchi</li>
+        </ul>
+
+
+
+        <!-- orderd list-->
+        <ol>
+            <li>Apple</li>
+            <ol>
+                <li>Color: Red</li>
+                <li>Season: winter</li>
+            </ol>
+            <li>Mango</li>
+            <ol>
+                <li>color: Yellow</li>
+                <li>Season: Summer</li>
+            </ol>
+            <li>litchi</li>
+        </ol>
+
+        <table>     <!-- ****** -->
+            <caption>This is a anime characters Table</caption> <!-- caption is used to tell what the table is ablout -->
+            <thead>
+            <tr>
+                <th colspan = "2">   <!--colspan is used to give same column name to all columns and the value 2 used to place the common column name in the middle of the table -->
+                    INFORMATION
+                </th>               <!--th used to display table header-->
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+                <td>Ben</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>gwen</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>kevin</td>
+                <td>11</td>
+            </tr>
+            </tbody>
+
+        </table>
+
+        <h4>Registration Form</h4>
+        <form action = "/action.php">
+            <input type = "text" placeholder = "Userid">
+            <br><br>
+            <input type = "password" placeholder = " Password">
+            <br>
+
+
+
+
+
+            <h5>select Your class </h5>
+            <label for = "101">
+                <input type = "radio" value = "class XI" name = "class" id = "101"> class XI
+            </label>
+            <br>
+            <!-- its good to keep value = class XI and class XI same for sync between user and backend -->
+            <!-- if two classes have same name, we can use id to differentiate them -->
+            
+            <label for = "102">
+                <input type = "radio" value = "class XII" name = "class" id = "102"> class XII
+            </label>
+            <!-- because of label even if we click on name instead of button at output it will still be selected -->
+            <br>
+            <br>
+
+
+
+
+
+            <h5>Select fav Subjects</h5>
+            <label for = "math">
+                <input type = "checkbox" value = "math" name = "subject" id = "101">Math
+            </label>
+            <br>
+            <label for = "phy">
+                <input type = "checkbox" value = "phy" name = "subject" id = "102">Phy
+            </label>
+            <br>
+            <label for = "che">
+                <input type = "checkbox" value = "che" name = "subject" id = "103">Che
+            </label>
+            <br>
+            <label for = "CS">
+                <input type = "checkbox" value = "cs" name = "subject" id = "104">CS
+            </label>
+            <br><br>
+
+            <textarea name = "feedback" id = "101" placeholder="please give feedback" 
+            rows = "5" columns = "5">  </textarea>
+            <br><br>
+
+            Select your city
+            <select name = "city">
+                <option value = "Select">Select</option>
+                <option value = "delhi">delhi</option>
+                <option value = "pune">pune</option>
+                <option value = "goa">goa</option>
+                <option value = "Banglore">Banglore</option>
+            </select>
+            <br><br>
+            <input type = "submit" value = "submit">
+            <br><br>
+
+            <iframe width="560" height="315" src="https://youtube.com/embed/HcOc7P5BMi4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            
+            <br><br>
+
+            <iframe width = "560" height = "315" src = "https://www.wikipedia.org/"></iframe>
+            <!-- complete wiki on our webpage -->
+
+            <br><br>
+            <iframe src = "https://google.com"></iframe>
+            <!-- some sites doesnt allow embedding their sites on our websites -->
+            <br><br>
+
+            <video width = "560" height = "315" src = "./L4/sunset.mp4" controls loop>Sunset video</video>
+            <!-- video tag is used to display videos on web page -->
+            
+            
+
+
+        
+
+    </main>
+    <footer> <p> This is all about lists, forms and tables </p></footer>
+
+</body>
+</html>
+
+
+
+
+
+<!-- LISTS, FORMS AND TABLES
+
+LISTS
+Lists are used to represent real life list data.
+Two types of lists in HTML
+
+1. Unordered: List will be printed inthe form of bullet points
+2. Ordered: Printed in order of nos, roman numerals or letters of english alphabet.
+
+
+TABLES
+Tables are used to represent real life table data
+<table> </table>   --used to tell that the data should be stored as a table
+<tr> used to display table row
+<td> used to display table data
+<th> used to display table header
+
+<thead> used to wrap table head
+<tbody> used to wrap table body
+    These r used for layout
+
+
+
+FORM IN HTML
+forms are used to collect data from the user
+eg: signup/login/help requests/contact me
+
+Action in form
+Action attribute is used to define define what action needs to be performed when a form is submitted
+<form action = "/action.php">
+
+LABELS
+<label for = "id1"> 
+    <input type = "radio" value = "class X" name = "class" id = "id1">
+</label>
+
+<label for = "id2">
+    <input type = "radio" value = "class X" name = "class" id = "id2">
+</label>
+
+CLASS AND ID
+To every element we can assign class and id
+id is to differntiate two classes with same name
+class is like making a group of students
+
+<div id = "101" class = "group1">
+</div>
+<div id = "102" class = "group1">
+</div>
+
+CHECKBOXES
+
+TEXTAREA
+
+SELECT(USED FOR DROP DOWN MENU)
+
+submit
+
+
+IFRAME TAG
+To show website inside webside
+like we can show yt videos or anyother website videos on our webpage
+<iframe source = "link">
+some websites doesnt allow this, like google
+
+VIDEO TAG
+<video src = "video.mp4"> My video </video>
+Attributes
+
+controls 
+height
+width
+loop
+autoplay
+
+-->
